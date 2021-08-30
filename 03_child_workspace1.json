@@ -1,0 +1,17 @@
+{
+    "data": {
+      "attributes": {
+        "name": "OutdoorDepartment"
+      },
+      "id": "OutdoorDepartment",
+      "type": "workspace",
+      "relationships": {
+        "parent": {
+          "data": {
+            "id": "retail",
+            "type": "workspace"
+          }
+        }
+      }
+    }
+    }

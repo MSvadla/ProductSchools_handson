@@ -1,0 +1,38 @@
+{
+  "workspaceDataFilters": [
+    {
+      "id": "department",
+      "title": "Department",
+      "columnName": "category",
+      "dataSourceId": "demo-ds",
+      "workspace": {
+        "id": "retail",
+        "type": "workspace"
+      },
+      "workspaceDataFilterSettings": [
+        {
+          "id": "HomeDepartment",
+          "title": "HomeDepartment",
+          "filterValues": [
+            "Home"
+          ],
+          "workspace": {
+            "id": "HomeDepartment",
+            "type": "workspace"
+          }
+        },
+        {
+          "id": "OutdoorDepartment",
+          "title": "OutdoorDepartment",
+          "filterValues": [
+            "Outdoor"
+          ],
+          "workspace": {
+            "id": "OutdoorDepartment",
+            "type": "workspace"
+          }
+        }
+      ]
+    }
+  ]
+}

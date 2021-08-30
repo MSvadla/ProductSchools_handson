@@ -1,0 +1,13 @@
+{
+    "data": {
+        "attributes": {
+            "title": "Orders Amount",
+            "content": {
+                "format": "#,##0",
+                "maql": "SELECT SUM({fact/order_lines.price}*{fact/order_lines.quantity})"
+            }
+        },
+        "id": "orders_amount_X",
+        "type": "metric"
+    }
+}

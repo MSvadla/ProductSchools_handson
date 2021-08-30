@@ -1,0 +1,1050 @@
+{
+    "workspaceDataFilters": [],
+    "workspaces": [
+        {
+            "id": "OutdoorDepartment",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "OutdoorDepartment",
+            "parent": {
+                "id": "retail",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "HomeDepartment",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [],
+                    "filterContexts": [],
+                    "metrics": [],
+                    "visualizationObjects": []
+                },
+                "ldm": {
+                    "datasets": [],
+                    "dateInstances": []
+                }
+            },
+            "name": "HomeDepartment",
+            "parent": {
+                "id": "retail",
+                "type": "workspace"
+            }
+        },
+        {
+            "id": "retail",
+            "model": {
+                "analytics": {
+                    "analyticalDashboards": [
+                        {
+                            "content": {
+                                "filterContextRef": {
+                                    "identifier": {
+                                        "id": "bdffe7db-9a43-4249-a44c-2dcaf5362635",
+                                        "type": "filterContext"
+                                    }
+                                },
+                                "layout": {
+                                    "type": "IDashboardLayout",
+                                    "sections": [
+                                        {
+                                            "type": "IDashboardLayoutSection",
+                                            "items": [
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 6
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "Orders per Category & Product",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "dateDataSet": {
+                                                            "identifier": {
+                                                                "id": "date",
+                                                                "type": "dataset"
+                                                            }
+                                                        },
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "2fb3bd30-9166-4034-b6bc-e503f3925b73",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                },
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 6
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "Orders per Status",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "dateDataSet": {
+                                                            "identifier": {
+                                                                "id": "date",
+                                                                "type": "dataset"
+                                                            }
+                                                        },
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "a883dd96-14ac-4aa2-8213-9378972a6c7d",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "version": "2"
+                            },
+                            "description": "",
+                            "id": "03fd799e-347b-40e7-845e-935be4a5105f",
+                            "title": "Department overview"
+                        },
+                        {
+                            "content": {
+                                "filterContextRef": {
+                                    "identifier": {
+                                        "id": "ca60908e-8679-41a6-b02c-409ef6452c59",
+                                        "type": "filterContext"
+                                    }
+                                },
+                                "layout": {
+                                    "type": "IDashboardLayout",
+                                    "sections": [
+                                        {
+                                            "type": "IDashboardLayoutSection",
+                                            "items": [
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 2
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "Orders total Revenue",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "4abb1a05-9f31-4f3a-b53c-b8d9fa484ec8",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                },
+                                                {
+                                                    "type": "IDashboardLayoutItem",
+                                                    "size": {
+                                                        "xl": {
+                                                            "gridWidth": 6
+                                                        }
+                                                    },
+                                                    "widget": {
+                                                        "type": "insight",
+                                                        "title": "Revenue per department",
+                                                        "description": "",
+                                                        "ignoreDashboardFilters": [],
+                                                        "insight": {
+                                                            "identifier": {
+                                                                "id": "5c2aede0-ac96-44d0-9aec-9b9bda420825",
+                                                                "type": "visualizationObject"
+                                                            }
+                                                        },
+                                                        "drills": [],
+                                                        "properties": {}
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "version": "2"
+                            },
+                            "description": "",
+                            "id": "7e5b64c5-04b8-4f50-9ab0-2f823a9222ac",
+                            "title": "Revenue overview"
+                        }
+                    ],
+                    "filterContexts": [
+                        {
+                            "content": {
+                                "filters": [],
+                                "version": "2"
+                            },
+                            "description": "",
+                            "id": "bdffe7db-9a43-4249-a44c-2dcaf5362635",
+                            "title": "filterContext"
+                        },
+                        {
+                            "content": {
+                                "filters": [],
+                                "version": "2"
+                            },
+                            "description": "",
+                            "id": "ca60908e-8679-41a6-b02c-409ef6452c59",
+                            "title": "filterContext"
+                        }
+                    ],
+                    "metrics": [
+                        {
+                            "content": {
+                                "format": "#,##0",
+                                "maql": "SELECT COUNT({attribute/order_lines.order_id})"
+                            },
+                            "id": "amount_of_orders",
+                            "title": "# of Orders"
+                        },
+                        {
+                            "content": {
+                                "format": "#,##0",
+                                "maql": "SELECT SUM({fact/order_lines.price}*{fact/order_lines.quantity})"
+                            },
+                            "id": "order_amount",
+                            "title": "# of Orders"
+                        },
+                        {
+                            "content": {
+                                "format": "#,##0",
+                                "maql": "SELECT SUM({fact/order_lines.price}*{fact/order_lines.quantity})"
+                            },
+                            "id": "orders_amount",
+                            "title": "Orders Amount"
+                        }
+                    ],
+                    "visualizationObjects": [
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "ec2677ddabb14b90892957512236db3e",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "order_lines.order_id",
+                                                                    "type": "attribute"
+                                                                }
+                                                            },
+                                                            "aggregation": "count",
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Count of Order id",
+                                                    "format": "#,##0"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "attribute": {
+                                                    "localIdentifier": "63e8646382194edfa126644f165f9896",
+                                                    "displayForm": {
+                                                        "identifier": {
+                                                            "id": "products.category",
+                                                            "type": "label"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "view"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "attribute": {
+                                                    "localIdentifier": "e467ee3da9e44fd8b233344e6fa8744d",
+                                                    "displayForm": {
+                                                        "identifier": {
+                                                            "id": "products.product_name",
+                                                            "type": "label"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "segment"
+                                    }
+                                ],
+                                "filters": [],
+                                "ref": {},
+                                "properties": {},
+                                "sorts": [],
+                                "visualizationUrl": "local:treemap",
+                                "isLocked": false,
+                                "version": "2"
+                            },
+                            "description": "Orders per Category & Product",
+                            "id": "2fb3bd30-9166-4034-b6bc-e503f3925b73",
+                            "title": "Orders per Category & Product"
+                        },
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "a95c20ccadef4cf682f11394fa51b80f",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "orders_amount",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Orders Amount"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    }
+                                ],
+                                "filters": [],
+                                "ref": {
+                                    "uri": "http://localhost:3000/api/entities/workspaces/retail/visualizationObjects/4abb1a05-9f31-4f3a-b53c-b8d9fa484ec8"
+                                },
+                                "identifier": "4abb1a05-9f31-4f3a-b53c-b8d9fa484ec8",
+                                "properties": {},
+                                "sorts": [],
+                                "uri": "http://localhost:3000/api/entities/workspaces/retail/visualizationObjects/4abb1a05-9f31-4f3a-b53c-b8d9fa484ec8",
+                                "visualizationUrl": "local:headline",
+                                "isLocked": false,
+                                "version": "2"
+                            },
+                            "description": "Orders total Revenue",
+                            "id": "4abb1a05-9f31-4f3a-b53c-b8d9fa484ec8",
+                            "title": "Orders total Revenue"
+                        },
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "fb535fff6f1a4340bd08898b6b7e66f9",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "orders_amount",
+                                                                    "type": "metric"
+                                                                }
+                                                            },
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Orders Amount"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "attribute": {
+                                                    "localIdentifier": "f8f57031f3064a1697d9d09b49ee48d0",
+                                                    "displayForm": {
+                                                        "identifier": {
+                                                            "id": "products.category",
+                                                            "type": "label"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "view"
+                                    }
+                                ],
+                                "filters": [],
+                                "ref": {},
+                                "properties": {
+                                    "controls": {
+                                        "dataLabels": {
+                                            "visible": true
+                                        },
+                                        "legend": {
+                                            "enabled": true
+                                        }
+                                    }
+                                },
+                                "sorts": [],
+                                "visualizationUrl": "local:donut",
+                                "isLocked": false,
+                                "version": "2"
+                            },
+                            "description": "Revenue per department",
+                            "id": "5c2aede0-ac96-44d0-9aec-9b9bda420825",
+                            "title": "Revenue per department"
+                        },
+                        {
+                            "content": {
+                                "buckets": [
+                                    {
+                                        "items": [
+                                            {
+                                                "measure": {
+                                                    "localIdentifier": "3021cdd1f5b34e24998f9feb92ad8e6b",
+                                                    "definition": {
+                                                        "measureDefinition": {
+                                                            "item": {
+                                                                "identifier": {
+                                                                    "id": "order_lines.order_id",
+                                                                    "type": "attribute"
+                                                                }
+                                                            },
+                                                            "aggregation": "count",
+                                                            "filters": []
+                                                        }
+                                                    },
+                                                    "title": "Count of Order id",
+                                                    "format": "#,##0"
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "measures"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "attribute": {
+                                                    "localIdentifier": "bcacef35766c48778bea4b55e012e13c",
+                                                    "displayForm": {
+                                                        "identifier": {
+                                                            "id": "products.category",
+                                                            "type": "label"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "view"
+                                    },
+                                    {
+                                        "items": [
+                                            {
+                                                "attribute": {
+                                                    "localIdentifier": "d320950122fb44e8a8b31cca26750890",
+                                                    "displayForm": {
+                                                        "identifier": {
+                                                            "id": "order_lines.order_status",
+                                                            "type": "label"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "localIdentifier": "stack"
+                                    }
+                                ],
+                                "filters": [],
+                                "ref": {},
+                                "properties": {},
+                                "sorts": [],
+                                "visualizationUrl": "local:column",
+                                "isLocked": false,
+                                "version": "2"
+                            },
+                            "description": "Orders per Status",
+                            "id": "a883dd96-14ac-4aa2-8213-9378972a6c7d",
+                            "title": "Orders per Status"
+                        }
+                    ]
+                },
+                "ldm": {
+                    "datasets": [
+                        {
+                            "attributes": [
+                                {
+                                    "description": "Campaign channel id",
+                                    "id": "campaign_channels.campaign_channel_id",
+                                    "labels": [
+                                        {
+                                            "description": "Campaign channel id",
+                                            "id": "campaign_channels.campaign_channel_id",
+                                            "primary": true,
+                                            "sourceColumn": "campaign_channel_id",
+                                            "tags": [
+                                                "Campaign channels"
+                                            ],
+                                            "title": "Campaign channel id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Campaign channels"
+                                    ],
+                                    "title": "Campaign channel id"
+                                },
+                                {
+                                    "description": "Category",
+                                    "id": "campaign_channels.category",
+                                    "labels": [
+                                        {
+                                            "description": "Category",
+                                            "id": "campaign_channels.category",
+                                            "primary": true,
+                                            "sourceColumn": "category",
+                                            "tags": [
+                                                "Campaign channels"
+                                            ],
+                                            "title": "Category"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Campaign channels"
+                                    ],
+                                    "title": "Category"
+                                },
+                                {
+                                    "description": "Type",
+                                    "id": "campaign_channels.type",
+                                    "labels": [
+                                        {
+                                            "description": "Type",
+                                            "id": "campaign_channels.type",
+                                            "primary": true,
+                                            "sourceColumn": "type",
+                                            "tags": [
+                                                "Campaign channels"
+                                            ],
+                                            "title": "Type"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Campaign channels"
+                                    ],
+                                    "title": "Type"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "demo-ds",
+                                "id": "campaign_channels",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [
+                                {
+                                    "description": "Budget",
+                                    "id": "campaign_channels.budget",
+                                    "sourceColumn": "budget",
+                                    "tags": [
+                                        "Campaign channels"
+                                    ],
+                                    "title": "Budget"
+                                },
+                                {
+                                    "description": "Spend",
+                                    "id": "campaign_channels.spend",
+                                    "sourceColumn": "spend",
+                                    "tags": [
+                                        "Campaign channels"
+                                    ],
+                                    "title": "Spend"
+                                }
+                            ],
+                            "grain": [
+                                {
+                                    "id": "campaign_channels.campaign_channel_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "campaign_channels",
+                            "references": [
+                                {
+                                    "identifier": {
+                                        "id": "campaigns",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "campaign_id"
+                                    ]
+                                }
+                            ],
+                            "tags": [
+                                "Campaign channels"
+                            ],
+                            "title": "Campaign channels"
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "description": "Campaign id",
+                                    "id": "campaigns.campaign_id",
+                                    "labels": [
+                                        {
+                                            "description": "Campaign id",
+                                            "id": "campaigns.campaign_id",
+                                            "primary": true,
+                                            "sourceColumn": "campaign_id",
+                                            "tags": [
+                                                "Campaigns"
+                                            ],
+                                            "title": "Campaign id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Campaigns"
+                                    ],
+                                    "title": "Campaign id"
+                                },
+                                {
+                                    "description": "Campaign name",
+                                    "id": "campaigns.campaign_name",
+                                    "labels": [
+                                        {
+                                            "description": "Campaign name",
+                                            "id": "campaigns.campaign_name",
+                                            "primary": true,
+                                            "sourceColumn": "campaign_name",
+                                            "tags": [
+                                                "Campaigns"
+                                            ],
+                                            "title": "Campaign name"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Campaigns"
+                                    ],
+                                    "title": "Campaign name"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "demo-ds",
+                                "id": "campaigns",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [],
+                            "grain": [
+                                {
+                                    "id": "campaigns.campaign_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "campaigns",
+                            "references": [],
+                            "tags": [
+                                "Campaigns"
+                            ],
+                            "title": "Campaigns"
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "description": "Customer id",
+                                    "id": "customers.customer_id",
+                                    "labels": [
+                                        {
+                                            "description": "Customer id",
+                                            "id": "customers.customer_id",
+                                            "primary": true,
+                                            "sourceColumn": "customer_id",
+                                            "tags": [
+                                                "Customers"
+                                            ],
+                                            "title": "Customer id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Customers"
+                                    ],
+                                    "title": "Customer id"
+                                },
+                                {
+                                    "description": "Customer name",
+                                    "id": "customers.customer_name",
+                                    "labels": [
+                                        {
+                                            "description": "Customer name",
+                                            "id": "customers.customer_name",
+                                            "primary": true,
+                                            "sourceColumn": "customer_name",
+                                            "tags": [
+                                                "Customers"
+                                            ],
+                                            "title": "Customer name"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Customers"
+                                    ],
+                                    "title": "Customer name"
+                                },
+                                {
+                                    "description": "Region",
+                                    "id": "customers.region",
+                                    "labels": [
+                                        {
+                                            "description": "Region",
+                                            "id": "customers.region",
+                                            "primary": true,
+                                            "sourceColumn": "region",
+                                            "tags": [
+                                                "Customers"
+                                            ],
+                                            "title": "Region"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Customers"
+                                    ],
+                                    "title": "Region"
+                                },
+                                {
+                                    "description": "State",
+                                    "id": "customers.state",
+                                    "labels": [
+                                        {
+                                            "description": "Location",
+                                            "id": "customers.geo__state__location",
+                                            "primary": false,
+                                            "sourceColumn": "geo__state__location",
+                                            "tags": [
+                                                "Customers"
+                                            ],
+                                            "title": "Location"
+                                        },
+                                        {
+                                            "description": "State",
+                                            "id": "customers.state",
+                                            "primary": true,
+                                            "sourceColumn": "state",
+                                            "tags": [
+                                                "Customers"
+                                            ],
+                                            "title": "State"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Customers"
+                                    ],
+                                    "title": "State"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "demo-ds",
+                                "id": "customers",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [],
+                            "grain": [
+                                {
+                                    "id": "customers.customer_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "customers",
+                            "references": [],
+                            "tags": [
+                                "Customers"
+                            ],
+                            "title": "Customers"
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "description": "Order id",
+                                    "id": "order_lines.order_id",
+                                    "labels": [
+                                        {
+                                            "description": "Order id",
+                                            "id": "order_lines.order_id",
+                                            "primary": true,
+                                            "sourceColumn": "order_id",
+                                            "tags": [
+                                                "Order lines"
+                                            ],
+                                            "title": "Order id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Order lines"
+                                    ],
+                                    "title": "Order id"
+                                },
+                                {
+                                    "description": "Order line id",
+                                    "id": "order_lines.order_line_id",
+                                    "labels": [
+                                        {
+                                            "description": "Order line id",
+                                            "id": "order_lines.order_line_id",
+                                            "primary": true,
+                                            "sourceColumn": "order_line_id",
+                                            "tags": [
+                                                "Order lines"
+                                            ],
+                                            "title": "Order line id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Order lines"
+                                    ],
+                                    "title": "Order line id"
+                                },
+                                {
+                                    "description": "Order status",
+                                    "id": "order_lines.order_status",
+                                    "labels": [
+                                        {
+                                            "description": "Order status",
+                                            "id": "order_lines.order_status",
+                                            "primary": true,
+                                            "sourceColumn": "order_status",
+                                            "tags": [
+                                                "Order lines"
+                                            ],
+                                            "title": "Order status"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Order lines"
+                                    ],
+                                    "title": "Order status"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "demo-ds",
+                                "id": "order_lines",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [
+                                {
+                                    "description": "Price",
+                                    "id": "order_lines.price",
+                                    "sourceColumn": "price",
+                                    "tags": [
+                                        "Order lines"
+                                    ],
+                                    "title": "Price"
+                                },
+                                {
+                                    "description": "Quantity",
+                                    "id": "order_lines.quantity",
+                                    "sourceColumn": "quantity",
+                                    "tags": [
+                                        "Order lines"
+                                    ],
+                                    "title": "Quantity"
+                                }
+                            ],
+                            "grain": [
+                                {
+                                    "id": "order_lines.order_line_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "order_lines",
+                            "references": [
+                                {
+                                    "identifier": {
+                                        "id": "campaigns",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "campaign_id"
+                                    ]
+                                },
+                                {
+                                    "identifier": {
+                                        "id": "customers",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "customer_id"
+                                    ]
+                                },
+                                {
+                                    "identifier": {
+                                        "id": "date",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "date"
+                                    ]
+                                },
+                                {
+                                    "identifier": {
+                                        "id": "products",
+                                        "type": "dataset"
+                                    },
+                                    "multivalue": false,
+                                    "sourceColumns": [
+                                        "product_id"
+                                    ]
+                                }
+                            ],
+                            "tags": [
+                                "Order lines"
+                            ],
+                            "title": "Order lines"
+                        },
+                        {
+                            "attributes": [
+                                {
+                                    "description": "Category",
+                                    "id": "products.category",
+                                    "labels": [
+                                        {
+                                            "description": "Category",
+                                            "id": "products.category",
+                                            "primary": true,
+                                            "sourceColumn": "category",
+                                            "tags": [
+                                                "Products"
+                                            ],
+                                            "title": "Category"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Products"
+                                    ],
+                                    "title": "Category"
+                                },
+                                {
+                                    "description": "Product id",
+                                    "id": "products.product_id",
+                                    "labels": [
+                                        {
+                                            "description": "Product id",
+                                            "id": "products.product_id",
+                                            "primary": true,
+                                            "sourceColumn": "product_id",
+                                            "tags": [
+                                                "Products"
+                                            ],
+                                            "title": "Product id"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Products"
+                                    ],
+                                    "title": "Product id"
+                                },
+                                {
+                                    "description": "Product name",
+                                    "id": "products.product_name",
+                                    "labels": [
+                                        {
+                                            "description": "Product name",
+                                            "id": "products.product_name",
+                                            "primary": true,
+                                            "sourceColumn": "product_name",
+                                            "tags": [
+                                                "Products"
+                                            ],
+                                            "title": "Product name"
+                                        }
+                                    ],
+                                    "tags": [
+                                        "Products"
+                                    ],
+                                    "title": "Product name"
+                                }
+                            ],
+                            "dataSourceTableId": {
+                                "dataSourceId": "demo-ds",
+                                "id": "products",
+                                "type": "dataSource"
+                            },
+                            "description": "",
+                            "facts": [],
+                            "grain": [
+                                {
+                                    "id": "products.product_id",
+                                    "type": "attribute"
+                                }
+                            ],
+                            "id": "products",
+                            "references": [],
+                            "tags": [
+                                "Products"
+                            ],
+                            "title": "Products"
+                        }
+                    ],
+                    "dateInstances": [
+                        {
+                            "description": "",
+                            "granularities": [
+                                "MINUTE",
+                                "HOUR",
+                                "DAY",
+                                "WEEK",
+                                "MONTH",
+                                "QUARTER",
+                                "YEAR",
+                                "MINUTE_OF_HOUR",
+                                "HOUR_OF_DAY",
+                                "DAY_OF_WEEK",
+                                "DAY_OF_MONTH",
+                                "DAY_OF_YEAR",
+                                "WEEK_OF_YEAR",
+                                "MONTH_OF_YEAR",
+                                "QUARTER_OF_YEAR"
+                            ],
+                            "granularitiesFormatting": {
+                                "titleBase": "",
+                                "titlePattern": "%titleBase - %granularityTitle"
+                            },
+                            "id": "date",
+                            "tags": [
+                                "Date"
+                            ],
+                            "title": "Date"
+                        }
+                    ]
+                }
+            },
+            "name": "Retail Global"
+        }
+    ]
+}

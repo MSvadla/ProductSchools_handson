@@ -1,0 +1,458 @@
+{
+	"info": {
+		"_postman_id": "f204ed6e-3a42-4bd0-b69c-02cd5d95d8cd",
+		"name": "Product school hands-on",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register Data source",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.gooddata.api+json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer YWRtaW46Ym9vdHN0cmFwOmFkbWluMTIz",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"data\": {\n          \"attributes\": {\n          \"name\": \"demo-ds\",\n          \"url\": \"jdbc:postgresql://localhost:5432/demo\",\n          \"schema\": \"demo\",\n          \"type\": \"POSTGRESQL\",\n          \"username\": \"demouser\",\n          \"password\": \"demopass\"\n      },\n      \"id\": \"demo-ds\",\n      \"type\": \"dataSource\"\n      }\n  }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/entities/dataSources",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"entities",
+						"dataSources"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create workspace",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.gooddata.api+json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.gooddata.api+json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer YWRtaW46Ym9vdHN0cmFwOmFkbWluMTIz",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"data\": {\n          \"attributes\": {\n              \"name\": \"Retail Global\"\n          },\n          \"id\": \"retail\",\n          \"type\": \"workspace\"\n      }\n  }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/entities/workspaces",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"entities",
+						"workspaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create child workspace Outdoor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.gooddata.api+json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.gooddata.api+json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer YWRtaW46Ym9vdHN0cmFwOmFkbWluMTIz",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"data\": {\n        \"attributes\": {\n          \"name\": \"OutdoorDepartment\"\n        },\n        \"id\": \"OutdoorDepartment\",\n        \"type\": \"workspace\",\n        \"relationships\": {\n          \"parent\": {\n            \"data\": {\n              \"id\": \"retail\",\n              \"type\": \"workspace\"\n            }\n          }\n        }\n      }\n      }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/entities/workspaces",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"entities",
+						"workspaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create child workspace Home",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.gooddata.api+json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.gooddata.api+json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer YWRtaW46Ym9vdHN0cmFwOmFkbWluMTIz",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"data\": {\n        \"attributes\": {\n          \"name\": \"HomeDepartment\"\n        },\n        \"id\": \"HomeDepartment\",\n        \"type\": \"workspace\",\n        \"relationships\": {\n          \"parent\": {\n            \"data\": {\n              \"id\": \"retail\",\n              \"type\": \"workspace\"\n            }\n          }\n        }\n      }\n      }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/entities/workspaces",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"entities",
+						"workspaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set workspace filters",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer YWRtaW46Ym9vdHN0cmFwOmFkbWluMTIz",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/Users/martinsvadlenka/Documents/00_GD.CN/AIO_declaratives/Product schools hands-on/ws-filter.json"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/layout/workspaceDataFilters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"layout",
+						"workspaceDataFilters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set all workspaces",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer YWRtaW46Ym9vdHN0cmFwOmFkbWluMTIz",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/Users/martinsvadlenka/Documents/00_GD.CN/AIO_declaratives/ws-layout.json"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/layout/workspaces",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"layout",
+						"workspaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create metric - Orders",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.gooddata.api+json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.gooddata.api+json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer YWRtaW46Ym9vdHN0cmFwOmFkbWluMTIz",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"data\": {\n          \"attributes\": {\n              \"title\": \"# of Orders\",\n              \"content\": {\n                  \"format\": \"#,##0\",\n                  \"maql\": \"SELECT COUNT({attribute/order_lines.order_id})\"\n              }\n          },\n          \"id\": \"amount_of_orders_new\",\n          \"type\": \"metric\"\n      }\n  }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/entities/workspaces/retail/metrics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"entities",
+						"workspaces",
+						"retail",
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create metric - Revenue",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.gooddata.api+json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.gooddata.api+json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer YWRtaW46Ym9vdHN0cmFwOmFkbWluMTIz",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"data\": {\n          \"attributes\": {\n              \"title\": \"Orders Amount\",\n              \"content\": {\n                  \"format\": \"#,##0\",\n                  \"maql\": \"SELECT SUM({fact/order_lines.price}*{fact/order_lines.quantity})\"\n              }\n          },\n          \"id\": \"orders_amount_X\",\n          \"type\": \"metric\"\n      }\n  }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/entities/workspaces/retail/metrics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"entities",
+						"workspaces",
+						"retail",
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get workspaces definition",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer YWRtaW46Ym9vdHN0cmFwOmFkbWluMTIz",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/layout/workspaces",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"layout",
+						"workspaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Semantic model definition",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer YWRtaW46Ym9vdHN0cmFwOmFkbWluMTIz",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/layout/workspaces/retail/analyticsModel",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"layout",
+						"workspaces",
+						"retail",
+						"analyticsModel"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get dashboards definition",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer YWRtaW46Ym9vdHN0cmFwOmFkbWluMTIz",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/entities/workspaces/retail/analyticalDashboards",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"entities",
+						"workspaces",
+						"retail",
+						"analyticalDashboards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Insights definition",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer YWRtaW46Ym9vdHN0cmFwOmFkbWluMTIz",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/entities/workspaces/retail/visualizationObjects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"entities",
+						"workspaces",
+						"retail",
+						"visualizationObjects"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

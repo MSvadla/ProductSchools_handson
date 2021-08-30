@@ -1,0 +1,13 @@
+{
+    "data": {
+        "attributes": {
+            "title": "# of Orders",
+            "content": {
+                "format": "#,##0",
+                "maql": "SELECT COUNT({attribute/order_lines.order_id})"
+            }
+        },
+        "id": "amount_of_orders_new",
+        "type": "metric"
+    }
+}

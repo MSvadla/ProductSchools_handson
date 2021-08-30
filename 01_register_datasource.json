@@ -1,0 +1,14 @@
+{
+    "data": {
+        "attributes": {
+        "name": "demo-ds",
+        "url": "jdbc:postgresql://localhost:5432/demo",
+        "schema": "demo",
+        "type": "POSTGRESQL",
+        "username": "demouser",
+        "password": "demopass"
+    },
+    "id": "demo-ds",
+    "type": "dataSource"
+    }
+}
